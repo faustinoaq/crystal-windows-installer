@@ -1,6 +1,6 @@
 # Crystal executable on bash on Windows
 
-The goal of this project is to create a Crystal Installer for Windows. Currently Crystal doesn't support Windows yet, however this installer uses batch files to call Linux binaries avaliables on WSL, inspired by https://github.com/watzon/wsl-proxy.
+The goal of this project is to create a Crystal Installer for Windows. Currently Crystal doesn't support Windows, however this installer uses batch files to call Linux binaries avaliables on WSL, inspired by https://github.com/watzon/wsl-proxy.
 
 WSL (Windows Subsystem for Linux) allows you to run Linux inside of Windows 10 without the need for a Virtual Machine.
 
