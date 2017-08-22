@@ -2,8 +2,11 @@
 
 This installer doesn't install Crystal compiler.
 
-It's a batch file that execute bash -c 'crystal', so you need to install WSL and 
-crystal inside it before run this installer.
+![installer](http://i.imgur.com/NJMVrdy.png)
+
+It's a batch file that execute `bash -c 'crystal'`, so you need to install [Crystal on WSL](https://crystal-lang.org/docs/installation/on_bash_on_ubuntu_on_windows.html) before run this installer.
+
+![command](http://i.imgur.com/1i8ks1z.png)
 
 # Release Notes
 
