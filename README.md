@@ -10,7 +10,7 @@ WSL (Windows Subsystem for Linux) allows you to run Linux inside of Windows 10 w
 
 It's a batch file that execute `bash -c 'crystal'`, so you need to install [Crystal on WSL](https://crystal-lang.org/docs/installation/on_bash_on_ubuntu_on_windows.html) before run this installer.
 
-![command](http://i.imgur.com/1i8ks1z.png)
+![command](http://i.imgur.com/HonJ4mE.png)
 
 # Release Notes
 
