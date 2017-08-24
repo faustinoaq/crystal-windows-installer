@@ -12,11 +12,11 @@ It's a batch file that execute `bash -c 'crystal'`, so you need to install [Crys
 
 ![command](http://i.imgur.com/HonJ4mE.png)
 
-# Release Notes
+## Release Notes
 
 See [Changelog](https://github.com/faustinoaq/crystal-windows-installer/blob/master/CHANGELOG.md)
 
-# Contributing
+## Contributing
 
 - Fork it https://github.com/faustinoaq/crystal-windows-installer/fork
 - Create your feature branch git checkout -b my-new-feature
@@ -24,6 +24,6 @@ See [Changelog](https://github.com/faustinoaq/crystal-windows-installer/blob/mas
 - Push to the branch git push origin my-new-feature
 - Create a new Pull Request
 
-# Contributors
+## Contributors
 
 - [@faustinoaq](https://github.com/faustinoaq) Faustino Aguilar - creator, maintainer
