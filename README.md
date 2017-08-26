@@ -4,7 +4,11 @@ The goal of this project is to create a Crystal Installer for Windows. Currently
 
 WSL (Windows Subsystem for Linux) allows you to run Linux inside of Windows 10 without the need for a Virtual Machine.
 
-**This installer doesn't install WSL nor Crystal compiler.**
+> **NOTE:** This installer doesn't install WSL nor Crystal compiler.
+
+| OS         | Version | Size  | Link |
+| ---------- | ------- | ----  | ---- |
+| Windows 10 | 0.0.1   | 0.3MB | [![GitHub Download Count By Tag](https://github-basic-badges.herokuapp.com/downloads/faustinoaq/crystal-windows-installer/v0.0.1/total.svg)](https://github.com/faustinoaq/crystal-windows-installer/releases/download/v0.0.1/crystal-setup-windows-10.exe) |
 
 ![installer](http://i.imgur.com/NJMVrdy.png)
 
