@@ -1,18 +1,15 @@
-# Crystal executable on bash on Windows
+# Crystal executable on Windows 10
 
-The goal of this project is to create a [Crystal](https://crystal-lang.org) Installer for Windows. Currently [Windows support is WIP](https://github.com/crystal-lang/crystal/pull/3582), however this installer uses batch files to call Linux binaries avaliables on WSL, **in other words it's just a shorcut**, inspired by https://github.com/watzon/wsl-proxy.
+Currently this project is a bat file that execute `crystal` inside the [Linux Subsystem on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10).
 
-WSL (Windows Subsystem for Linux) allows you to run Linux inside of Windows 10 without the need for a Virtual Machine.
+However the final goal of this project is to create a [native](https://github.com/crystal-lang/crystal/pull/3582) Crystal installer for Windows.
 
-> **NOTE:** This installer doesn't install WSL nor Crystal compiler.
+## Installation
 
-| OS         | Version | Size  | Link |
-| ---------- | ------- | ----  | ---- |
-| Windows 10 | 0.0.1   | 0.3MB | [![GitHub Download Count By Tag](https://github-basic-badges.herokuapp.com/downloads/faustinoaq/crystal-windows-installer/v0.0.1/total.svg)](https://github.com/faustinoaq/crystal-windows-installer/releases/download/v0.0.1/crystal-setup-windows-10.exe) |
+1. [Install Crystal on the Linux Subsystem on Windows 10](https://crystal-lang.org/docs/installation/on_bash_on_ubuntu_on_windows.html)
+2. Download and execute [crystal-setup-windows-10.exe](https://github.com/faustinoaq/crystal-windows-installer/releases)
 
 ![installer](http://i.imgur.com/NJMVrdy.png)
-
-It's a batch file that execute `bash -c 'crystal'`, so you need to install [Crystal on WSL](https://crystal-lang.org/docs/installation/on_bash_on_ubuntu_on_windows.html) before run this installer.
 
 ![command](http://i.imgur.com/HonJ4mE.png)
 
