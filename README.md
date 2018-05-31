@@ -1,6 +1,6 @@
 # Crystal executable on Windows 10
 
-Currently this project is a bat file that execute `crystal` inside the [Linux Subsystem on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10).
+Currently this project is a bat file that execute `crystal` on [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
 
 However the final goal of this project is to create a [native](https://github.com/crystal-lang/crystal/pull/3582) Crystal installer for Windows.
 
