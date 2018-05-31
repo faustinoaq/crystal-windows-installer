@@ -4,6 +4,13 @@ Currently this project is a bat file that execute `crystal` inside the [Linux Su
 
 However the final goal of this project is to create a [native](https://github.com/crystal-lang/crystal/pull/3582) Crystal installer for Windows.
 
+## Prerequisites
+
+This project requires:
+
+- [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+- [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (Windows Subsystem for Linux)
+
 ## Installation
 
 1. [Install Crystal on the Linux Subsystem on Windows 10](https://crystal-lang.org/docs/installation/on_bash_on_ubuntu_on_windows.html)
