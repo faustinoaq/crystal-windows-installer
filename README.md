@@ -16,7 +16,7 @@ This project requires:
 1. [Install Crystal on the Linux Subsystem on Windows 10](https://crystal-lang.org/install/on_wsl/)
 2. Download and execute [crystal-setup-windows-10.exe](https://github.com/faustinoaq/crystal-windows-installer/releases)
 
-![installer](http://i.imgur.com/NJMVrdy.png)
+![installer](https://user-images.githubusercontent.com/3067335/109775504-9731c480-7bcf-11eb-909f-56adc058d91f.png)
 
 ![command](http://i.imgur.com/HonJ4mE.png)
 
