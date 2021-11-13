@@ -1,15 +1,16 @@
 ; Crystal installer layer for bash on Windows
-; by @faustinoaq, 2017
+; by @faustinoaq, 2017-2021
 
 #define MyAppName "Crystal on WSL"
-#define MyAppVersion "0.0.1"
+#define MyAppVersion "0.0.2"
 #define MyAppPublisher "Faustino Aguilar"
 #define MyAppURL "https://github.com/faustinoaq/crystal-windows-installer"
 #define MyAppExeName "play.exe"
 
 [Setup]
 AppId={{07F53AD5-6E25-41F5-9FF2-86958C4FB64B}
-SignTool=signtool
+;SignTool=signtool $f
+
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
@@ -18,20 +19,20 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 ChangesEnvironment=yes
-DefaultDirName={pf}\Crystal
+DefaultDirName={commonpf}\Crystal
 DisableProgramGroupPage=yes
 DisableWelcomePage=no
-LicenseFile=C:\Users\main\Desktop\crystal-installer\LICENSE.md
-InfoBeforeFile=C:\Users\main\Desktop\crystal-installer\info\README.txt
-InfoAfterFile=C:\Users\main\Desktop\crystal-installer\info\CHANGELOG.txt
-OutputDir=C:\Users\main\Desktop\crystal-installer
+LicenseFile={#SourcePath}\LICENSE
+InfoBeforeFile={#SourcePath}\info\README.txt
+InfoAfterFile={#SourcePath}\info\CHANGELOG.txt
+OutputDir={#SourcePath}
 OutputBaseFilename=crystal-setup
-SetupIconFile=C:\Users\main\Desktop\crystal-installer\images\favicon.ico
+SetupIconFile={#SourcePath}\images\favicon.ico
 Compression=lzma
 SolidCompression=yes
 UninstallDisplayIcon={app}\{#MyAppExeName}
-WizardSmallImageFile=C:\Users\main\Desktop\crystal-installer\images\icon.bmp
-WizardImageFile=C:\Users\main\Desktop\crystal-installer\images\image.bmp
+WizardSmallImageFile={#SourcePath}\images\icon.bmp
+WizardImageFile={#SourcePath}\images\image.bmp
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -40,9 +41,9 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-Source: "C:\Users\main\Desktop\crystal-installer\play.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\main\Desktop\crystal-installer\crystal.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\main\Desktop\crystal-installer\shards.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}\play.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}\crystal.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#SourcePath}\shards.bat"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{commonprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
